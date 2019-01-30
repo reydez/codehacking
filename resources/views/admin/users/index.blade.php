@@ -4,6 +4,10 @@
 
 @section('content')
 
+    @if(Session::has('msg'))
+           <p class="bg-danger">{{session('msg')}}</p>
+    @endif
+
     <h1>Users</h1>
     <table class="table">
           <thead>
