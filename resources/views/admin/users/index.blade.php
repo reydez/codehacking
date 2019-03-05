@@ -4,8 +4,8 @@
 
 @section('content')
 
-    @if(Session::has('msg'))
-           <p class="bg-danger">{{session('msg')}}</p>
+    @if(Session::has('userMsg'))
+           <p class="bg-danger">{{session('userMsg')}}</p>
     @endif
 
     <h1>Users</h1>
